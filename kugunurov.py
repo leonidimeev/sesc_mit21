@@ -1,15 +1,9 @@
-print("Calculator!")
-while True:
-    x = int(input("Number 1: "))
-    y = int(input("Number 2: "))
-    operation = input("Choose operation:\n+\n-\n*\n:\n%\n")
-    if operation == "+":
-        print(x+y)
-    if operation == "-":
-        print(x-y)
-    if operation == "*":
-        print(x*y)
-    if operation == ":":
-        print(x//y)
-    if operation == "%":
-        print(x%y)
+n = int(input("n: "))
+res = 0
+for i in range(1,n+1):
+    res+=i
+print("The sum of N nums: "+str(res))
+res = 1
+for z in range(1,n+1):
+    res*=z
+print("The multiply of N nums: "+str(res))
